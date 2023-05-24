@@ -6,7 +6,8 @@
 
 @media screen and (max-width: 800px) {
     #register-container {
-        max-width: 500px;
+        max-width: 440px;
+        min-height: auto;
         flex-direction: column;
         width: 100%;
         height: 100%;
