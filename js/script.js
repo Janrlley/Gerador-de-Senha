@@ -2,7 +2,6 @@
 const generatePasswordButton = document.querySelector("#generate-password");
 const generatedPasswordElement = document.querySelector("#generated-password");
 
-
 // funções
 const getLetterLowerCase = () => {
   return String.fromCharCode(Math.floor(Math.random() * 26) + 97);
@@ -44,7 +43,7 @@ const generatePassword = (getLetterLowerCase, getLetterUpperCase, getNumber, get
 
   generatedPasswordElement.style.display = "block";
   generatedPasswordElement.querySelector("h4").innerText = password;
-};
+}; 
 
 // Eventos
 generatePasswordButton.addEventListener("click", () => {
