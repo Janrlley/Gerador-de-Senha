@@ -1,0 +1,30 @@
+@media screen and (max-width: 916px) {
+    #register-container {
+        max-width: 800px;
+      }
+}
+
+@media screen and (max-width: 800px) {
+    #register-container {
+        max-width: 500px;
+    } 
+
+    #register-banner h1 {
+        font-size: 1.9rem;
+        word-spacing: 50rem;
+    }
+
+    #register-form {
+        padding: 1.6rem;
+    }
+
+    #register-form h2 {
+        font-size: 1.6rem;
+    }
+
+    #register-form input[type="submit"] {
+        align-self: center;
+        max-width: 100px;
+        padding: 0.7rem 1rem;
+    }
+}
