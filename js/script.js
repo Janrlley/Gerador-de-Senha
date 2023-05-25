@@ -46,7 +46,6 @@ const generatePassword = (getLetterLowerCase, getLetterUpperCase, getNumber, get
   generatedPasswordElement.style.display = "block";
   generatedPasswordElement.querySelector("h4").innerText = password;
   newPassword = password;
-  console.log(newPassword);
 }; 
 
 const copyPassword = () => {
