@@ -48,7 +48,9 @@
         <label for="confirmpassword">Confirmação de senha</label>
         <input type="password" name="confirmpassword" id="confirmpassword" placeholder="Confirme a sua senha">
       </div>
-      <input type="submit" value="Cadastrar">
+      <input onclick="validatingPassword()" type="submit" value="Cadastrar">
+      <p id="error-password" class="error">Senhas diferentes!</p>
+      <p id="login-successful" class="success">Cadastro feito!</p>
     </div>
   </div>
 </body>

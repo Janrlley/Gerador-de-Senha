@@ -4,6 +4,11 @@ const generatedPasswordElement = document.querySelector("#generated-password");
 
 var newPassword = "";
 
+let passwordEntered = document.getElementById("password")
+let confirmPassword = document.getElementById("confirmpassword")
+let messageError = document.getElementById("error-password")
+let messageSuccess = document.getElementById("login-successful")
+
 // funções
 const getLetterLowerCase = () => {
   return String.fromCharCode(Math.floor(Math.random() * 26) + 97);
@@ -21,6 +26,7 @@ const getSymbol = () => {
   const symbols = "(){}[]=<>/,.!@#$%&*+-_|:;";
   return symbols[Math.floor(Math.random() * symbols.length)];
 };
+
 
 const generatePassword = (getLetterLowerCase, getLetterUpperCase, getNumber, getSymbol) => {
   
@@ -52,6 +58,16 @@ const copyPassword = () => {
   navigator.clipboard.writeText(newPassword);
   alert("Copiado para a área de transferência!");
 };
+
+const validatingPassword = () => {
+  if(confirmPassword.value !== passwordEntered.value){
+    messageError.style.display = "block";
+    messageSuccess.style.display = "none"
+  } else {
+    messageSuccess.style.display = "block";
+    messageError.style.display = "none"
+  }
+}
 
 // Eventos
 generatePasswordButton.addEventListener("click", () => {

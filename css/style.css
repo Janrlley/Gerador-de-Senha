@@ -124,10 +124,28 @@ input:focus {
   padding: 1rem 1.4rem;
   max-width: 150px;
   cursor: pointer;
-  align-self: flex-end;
+  align-self: center;
   transition: 0.4s;
 }
 
 #register-form input[type="submit"]:hover {
   opacity: 1;
+}
+
+#register-form .error {
+  margin: 1rem 0;
+  color: rgba(216, 21, 21, 0.826);
+  font-size: 1.1rem;
+  font-weight: 800;
+  transition: 0.6s;
+  display: none;
+}
+
+#register-form .success {
+  margin: 1rem 0;
+  color: rgba(14, 215, 24, 0.953);
+  font-size: 1.1rem;
+  font-weight: 800;
+  transition: 0.6s;
+  display: none;
 }

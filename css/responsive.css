@@ -4,7 +4,7 @@
       }
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 768px) {
     #register-container {
         max-width: 440px;
         min-height: auto;
